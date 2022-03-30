@@ -1,14 +1,19 @@
 class Item {
-  String _name = '';
-  int _price = 0;
-  int _id = 0;
+  // String _name = '';
+  // int _price = 0;
+  // int _id = 0;
 
-  int get id => _id;
+  // cara  2
+  String? _name;
+  int? _price;
+  int? _id;
 
-  String get name => this.name;
+  int get id => _id!;
+
+  String get name => this._name!;
   set name(String value) => this._name = value;
 
-  get price => this._price;
+  get price => this._price!;
   set price(value) => this._price = value;
 
 // konstruktor versi 1
